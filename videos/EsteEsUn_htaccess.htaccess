@@ -1,0 +1,6 @@
+#Contents of .htaccess
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://matahari.fi-p.unam.mx/~inge-flechas/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.matahari.fi-p.unam.mx/~inge-flechas/.*$ [NC]
+RewriteRule .(mp4|mp3|avi)$ - [F]
